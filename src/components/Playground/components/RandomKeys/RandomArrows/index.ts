@@ -1,1 +1,1 @@
-export { default } from "./RandomArrows"
+export { default } from './RandomArrows';

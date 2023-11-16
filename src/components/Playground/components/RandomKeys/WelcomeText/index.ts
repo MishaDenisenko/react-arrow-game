@@ -1,1 +1,1 @@
-export { default } from "./WelcomeText"
+export { default } from './WelcomeText';

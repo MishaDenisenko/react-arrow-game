@@ -1,13 +1,13 @@
-import { useAppSelector } from "../../../../app/hooks"
-import { MAP_ARROW_CODES } from "../../constants"
-import { IMapArrowCodes } from "../../types"
+import { useAppSelector } from '../../../../app/hooks';
+import { MAP_ARROW_CODES } from '../../constants';
+import { IMapArrowCodes } from '../../types';
 
 export const useKeyPressedElement = (): string => {
-  const state = useAppSelector((state) => state.playground)
+    const state = useAppSelector((state) => state.playground);
 
-  if (!state.steps.length) return "⌛️"
+    if (!state.steps.length) return '⌛️';
 
-  const { enteredValue } = state.steps[state.currentStep - 1]
+    const { enteredValue } = state.steps[state.currentStep - 1];
 
-  return MAP_ARROW_CODES[enteredValue as keyof IMapArrowCodes] || "⌛️"
-}
+    return MAP_ARROW_CODES[enteredValue as keyof IMapArrowCodes] || '⌛️';
+};

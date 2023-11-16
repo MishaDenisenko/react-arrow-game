@@ -1,27 +1,23 @@
-import React from "react"
-import { useAppSelector } from "../../../../app/hooks"
+import React from 'react';
+import { useAppSelector } from '../../../../app/hooks';
 
-import RandomArrows from "./RandomArrows"
-import WelcomeText from "./WelcomeText"
+import RandomArrows from './RandomArrows';
+import WelcomeText from './WelcomeText';
 
 interface IRandomKey {
-  isTimerActive: boolean
+    isTimerActive: boolean;
 }
 
 const RandomKeys: React.FC<IRandomKey> = (props) => {
-  const { isTimerActive } = props
-  const { steps } = useAppSelector((state) => state.playground)
+    const { isTimerActive } = props;
+    const { steps } = useAppSelector((state) => state.playground);
 
-  return (
-    <div>
-      <h3>RandomKeys</h3>
-      {steps.length ? (
-        <RandomArrows />
-      ) : (
-        <WelcomeText isTimerActive={isTimerActive} />
-      )}
-    </div>
-  )
-}
+    return (
+        <div>
+            <h3>RandomKeys</h3>
+            {steps.length ? <RandomArrows/> : <WelcomeText isTimerActive={isTimerActive}/>}
+        </div>
+    );
+};
 
-export default RandomKeys
+export default RandomKeys;

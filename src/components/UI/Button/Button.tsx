@@ -17,8 +17,8 @@ const Button: React.FC<IButton> = (props) => {
     <MaterialButton
       variant={"contained"}
       size={"small"}
-      className={cn(styles.button, className)}
       {...props}
+      className={cn(styles.button, className)}
     >
       {children}
     </MaterialButton>
