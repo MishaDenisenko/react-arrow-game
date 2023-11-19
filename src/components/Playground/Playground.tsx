@@ -11,6 +11,7 @@ import Score from './components/Score';
 import Modal from './components/Modal';
 
 import styles from './Playground.module.css';
+import Description from './components/Description';
 
 const Playground: React.FC = () => {
     const { currentStep, totalSuccess, totalFailed } = useAppSelector(
@@ -60,6 +61,7 @@ const Playground: React.FC = () => {
             </div>
 
             <div className={styles.column}>
+                <Description />
                 <Controls isTimerActive={isTimerActive} setIsTimerActive={setIsTimerActive}/>
             </div>
 
