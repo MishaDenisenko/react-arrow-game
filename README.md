@@ -1,27 +1,58 @@
-# vite-template-redux
+# Readme
 
-Uses [Vite](https://vitejs.dev/), [Vitest](https://vitest.dev/), and [React Testing Library](https://github.com/testing-library/react-testing-library) to create a modern [React](https://react.dev/) app compatible with [Create React App](https://create-react-app.dev/)
+### Project
 
-```sh
-npx degit reduxjs/redux-templates/packages/vite-template-redux my-app
-```
+- [https://mishadenisenko.github.io/react-arrow-game/](https://mishadenisenko.github.io/react-arrow-game/)
 
-## Goals
+### Stack
 
-- Easy migration from Create React App or Vite
-- As beginner friendly as Create React App
-- Optimized performance compared to Create React App
-- Customizable without ejecting
+- `React` + `Typescript`
+- `Redux` + `Redux Toolkit`
+- `Material UI`
+- `ESLint` + `Prettier` + `Husky`
+- `Vite`, `Vitest`
+- `GitHub Pages`
 
-## Scripts
+### Темы
 
-- `dev`/`start` - start dev server and open browser
-- `build` - build for production
-- `preview` - locally preview production build
-- `test` - launch test runner
+- Установка template от Redux Toolkit
+- Настройка ESLint, Prettier
+- Настройка Prettier в VSCode
+- Настройка hook pre-commit с Husky
 
-## Inspiration
+3. Бизнес логика на Redux Toolkit
 
-- [Create React App](https://github.com/facebook/create-react-app/tree/main/packages/cra-template)
-- [Vite](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react)
-- [Vitest](https://github.com/vitest-dev/vitest/tree/main/examples/react-testing-lib)
+- Написание reducers
+- Декомпозиция по компонентам
+
+4. Подключение Material-UI и создание UI-Kit
+
+- Подключение Material-UI
+- Создание UI-Kit
+- Стилизация компонентов
+- Добавление favicon
+
+5. Написание тестов на Vitest
+6. Деплой на GitHub Pages
+
+### Порядок импортов
+
+**Категория 1**
+
+- libs
+- Material UI
+
+**Категория 2**
+
+- slices
+- hooks
+- utils
+- constants
+- types
+- ui-kit
+- components
+- images
+
+**Категория 3**
+
+- styles
